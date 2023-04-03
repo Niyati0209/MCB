@@ -78,16 +78,3 @@ CREATE TABLE XX_INVOICE_LINES(
 ALTER table XX_INVOICE_LINES add CONSTRAINT fk_invoice_header_id FOREIGN KEY (invoice_header_id) REFERENCES XX_INVOICE_HEADERS(invoice_header_id);
 ALTER table XX_INVOICE_LINES add CONSTRAINT fk_po_line_id FOREIGN KEY (po_line_id) REFERENCES XX_PO_LINES(po_line_id);
 ALTER table XX_INVOICE_LINES add CONSTRAINT fk_invoice_hold_id FOREIGN KEY (invoice_hold_id) REFERENCES XX_INVOICE_HOLDS(invoice_hold_id); 
-
-----------------------
-
---drop table XX_INVOICE_LINES;
---drop table XX_INVOICE_HEADERS;
---drop table XX_PO_LINES;
---drop table XX_PO_HEADERS;
---drop table XX_SUPPLIER_CONTACT;
---drop table XX_SUPPLIERS;
---drop table XX_SUPPLIER_ADDRESS;
---drop table XX_INVOICE_HOLDS;
-
-----------------------------
